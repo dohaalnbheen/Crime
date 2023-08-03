@@ -1,0 +1,154 @@
+.about_achievmets {
+    margin-top: 3rem;
+}
+
+.abot_achievments-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 2rem;
+}
+
+.about_achievmets-right h1 {
+    margin: 2rem;
+    font-size: 4rem;
+    color: #ffc100;
+}
+
+.about_achievmets-right p {
+    margin: 1rem;
+    line-height: 2.5rem;
+}
+
+.achievmets-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.achievmet-card {
+    background: #ffc100;
+    color: black;
+    text-align: center;
+    border-radius: 1rem;
+ 
+
+}
+
+.achievmet-card:hover {
+    background: #37474f;
+    color: var(--color-primary);
+
+}
+
+.achievmet-icon {
+    background: black;
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.achievmet-card span {
+    margin: 2rem;
+}
+
+.achievmet-card p {
+    font-weight: bolder;
+}
+
+.Team h2 {
+    text-align: center;
+    margin: 2rem;
+    font-size: 3rem;
+    color: var(--color-primary);
+}
+
+.ourTeam-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.team_card {
+    background: var(--color-primary);
+    padding: 2rem;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+
+}
+.team_card:hover{
+    background: transparent;border-color: var(--color-primary);
+}
+.team_card:hover 
+.team_card-social{
+    right: 0;
+}
+
+
+.team_card-pics img{
+    filter: saturate(0);
+}
+.team_card:hover img{
+    filter: saturate(1);
+}
+.team_card-info * {
+    text-align: center;
+    margin-top: 2rem; 
+}
+
+.team_card-social{
+    position: absolute;
+    top: 20%;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem 0 0 1rem ;
+    background:#37474f;
+    transform: translateY(-50);
+    box-shadow: -2rem 0  2rem rgba(0, 0, 0, 0.2);
+
+}
+.team_card-social a{
+    padding: 1rem;
+}
+
+
+
+@media screen and (max-width:1024px) {
+
+    .about_achievmets {
+        margin-top: 2rem;
+    }
+
+    .abot_achievments-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about_achievmets-left {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .ourTeam-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .achievmets-card {
+        grid-template-columns: 1fr;
+        gap: 0.7rem;
+    }
+
+    .ourTeam-container {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+}
